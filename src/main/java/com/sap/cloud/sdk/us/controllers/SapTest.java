@@ -16,8 +16,8 @@ import com.sap.conn.jco.ext.DestinationDataProvider;
 
 public class SapTest {
     static String   IP="ds4poc:1234", //IP or HOST
-                    USER="179045", // user name of SAP
-                    PASSWORD="Unidasul@2020", // password of SAP
+                    USER="***********", // user name of SAP
+                    PASSWORD="**********", // password of SAP
                     CLIENT="110", //mandant in sap
                     SYSNR="00", // instance number
                     LANG="es"; // language (es or en)
@@ -29,7 +29,7 @@ public class SapTest {
         
          try {
             // This will create a file called mySAPSystem.jcoDestination
-            String DESTINATION_NAME1 = "S4HANA_API_CLFN_PRODUCT_SRV";
+            String DESTINATION_NAME1 = "*****API_CLFN_PRODUCT_SRV";
             Properties connectProperties = new Properties();
             connectProperties.setProperty(DestinationDataProvider.JCO_ASHOST,   IP);
             connectProperties.setProperty(DestinationDataProvider.JCO_SYSNR,    SYSNR);
@@ -41,7 +41,7 @@ public class SapTest {
 
         // This will use that destination file to connect to SAP
 
-            JCoDestination destination = JCoDestinationManager.getDestination("S4HANA_API_CLFN_PRODUCT_SRV");
+            JCoDestination destination = JCoDestinationManager.getDestination("*****_API_CLFN_PRODUCT_SRV");
  
            String customDestination = destination.getClient();
  
