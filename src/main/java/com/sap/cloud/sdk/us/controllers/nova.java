@@ -152,7 +152,7 @@ public class nova
 
       //  TesteJava destino = new TesteJava();
       
-      Conecta destino = new Conecta("/sap/opu/odata/sap/API_CLFN_PRODUCT_SRV", "A_ProductCharcValue", "S4HANA_API_CLFN_PRODUCT_SRV");
+      Conecta destino = new Conecta("/sap/opu/odata/sap/API_CLFN_PRODUCT_SRV", "A_ProductCharcValue", "***_API_CLFN_PRODUCT_SRV");
            
       
          return destino.getServicePath(); //destino.getRes();   
