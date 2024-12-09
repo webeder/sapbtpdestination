@@ -36,7 +36,7 @@ public class BuscaToken {
      
     static String servicePath = "/sap/opu/odata/sap/";
     static String entityName = "z_gw_authorization_poc_srv";
-    static String destinationName = "S4HANA_API_CLFN_PRODUCT_SRV";
+    static String destinationName = "*****API_CLFN_PRODUCT_SRV";
  
 
   /*  public BuscaToken(String servicePath, String entityName, String destinationName, String var,  String sapclient) {
